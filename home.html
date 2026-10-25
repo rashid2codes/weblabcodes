@@ -1,102 +1,80 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ShopEase - Home</title>
-    <link rel="stylesheet" href="shop.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ShopEase - Home</title>
+  <link rel="stylesheet" href="shopstyle.css">
+  <script src="javascript.js" defer></script>
 </head>
 <body>
 
-    <!-- Navigation Bar -->
-    <header>
-        <h2> ShopEase Of DeadMind X2</h2>
+<header>
+  <div class="logo">🛍 ShopEase of Perfect Ten</div>
+  <nav>
+    <a href="home.html">Home</a>
+    <a href="product.html">Products</a>
+    <a href="about.html">About Us</a>
+    <a href="contact.html">Contact</a>
+    
+  </nav>
+  <button onclick="toggleTheme()">🌙 Theme</button>
+</header>
 
-        <nav>
-            <a href="index.html">Home</a>
-            <a href="D:\WEB LAB (YAWAR SIR)\ShopEase(WEB LAB ASSIGNMENT)\products.html">Products</a>
-            <a href="index.html#categories">Categories</a>
-            <a href="D:\WEB LAB (YAWAR SIR)\ShopEase(WEB LAB ASSIGNMENT)\aboutshop.html">About Us</a>
-            <a href="contact.html">Contact Us</a>
-        </nav>
+<main class="container">
+  <section class="hero">
+    <h1>Discover Trendy Products For a Better You</h1>
+    <p>Latest collections, best prices and amazing offers!</p>
+    <a class="btn" href="product.html">Shop Now</a>
+  </section>
 
-        <button id="darkMode">🌙</button>
-    </header>
+  <h2>Featured Products</h2>
+  <div class="products">
 
-    <!-- Banner -->
-    <section class="banner">
-        <div>
-            <h1>Discover Trendy Products<br>For a Better You</h1>
-            <p>Latest collections, best prices and amazing offers.</p>
-            <button id="shopNow">Shop Now</button>
-        </div>
-    </section>
+    <div class="card">
+      <img src="D:\WEB LAB (YAWAR SIR)\sneekers.jpg" alt="Shoes">
+      <h3>Casual Sneakers</h3>
+      <p class="price">₹1,299</p>
+      <button onclick="addToCart('Casual Sneakers',1299)">Add to Cart</button>
+    </div>
 
-    <!-- Featured Products -->
-    <section class="section" id="featured">
-        <h2>Featured Products</h2>
+    <div class="card">
+      <img src="D:\WEB LAB (YAWAR SIR)\watch.jpg" alt="Watch">
+      <h3>Smart Watch</h3>
+      <p class="price">₹2,999</p>
+      <button onclick="addToCart('Smart Watch',2999)">Add to Cart</button>
+    </div>
 
-        <div class="products">
-            <div class="card">
-                <img src="D:\WEB LAB (YAWAR SIR)\sneekers.jpg"
-                     alt="Sneakers">
-                <h3>Casual Sneakers</h3>
-                <p>₹1,299</p>
-                <button class="addCart">Add to Cart</button>
-            </div>
+    <div class="card">
+      <img src="D:\WEB LAB (YAWAR SIR)\handbag.jpg" alt="Bag">
+      <h3>Stylish Handbag</h3>
+      <p class="price">₹1,899</p>
+      <button onclick="addToCart('Stylish Handbag',1899)">Add to Cart</button>
+    </div>
 
-            <div class="card">
-                <img src="D:\WEB LAB (YAWAR SIR)\watch.jpg"
-                     alt=" Watch">
-                <h3>Smart Watch</h3>
-                <p>₹2,999</p>
-                <button class="addCart">Add to Cart</button>
-            </div>
+    <div class="card">
+      <img src="D:\WEB LAB (YAWAR SIR)\headphone.jpg" alt="Headphones">
+      <h3>Wireless Headphones</h3>
+      <p class="price">₹2,499</p>
+      <button onclick="addToCart('Wireless Headphones',2499)">Add to Cart</button>
+    </div>
 
-            <div class="card">
-                <img src="D:\WEB LAB (YAWAR SIR)\handbag.jpg"
-                     alt="Handbag">
-                <h3>Stylish Handbag</h3>
-                <p>₹1,899</p>
-                <button class="addCart">Add to Cart</button>
-            </div>
+  </div>
 
-            <div class="card">
-                <img src="D:\WEB LAB (YAWAR SIR)\headphone.jpg"
-                     alt="Headphones">
-                <h3>Wireless Headphones</h3>
-                <p>₹2,499</p>
-                <button class="addCart">Add to Cart</button>
-            </div>
-        </div>
-    </section>
+  <h2>Shop by Category</h2>
+  <div class="products">
+    <div class="card"><h3>Electronics</h3><a class="btn" href="products.html">Explore</a></div>
+    <div class="card"><h3>Clothing</h3><a class="btn" href="products.html">Explore</a></div>
+    <div class="card"><h3>Accessories</h3><a class="btn" href="products.html">Explore</a></div>
+    <div class="card"><h3>Footwear</h3><a class="btn" href="products.html">Explore</a></div>
+  </div>
+</main>
 
-    <!-- Categories -->
-    <section class="section" id="categories">
-        <h2>Shop by Category</h2>
 
-        <div class="categories">
-            <div class="category">💻 Electronics</div>
-            <div class="category">👕 Clothing</div>
-            <div class="category">👜 Accessories</div>
-            <div class="category">👟 Footwear</div>
-        </div>
-    </section>
+<footer>
+  <p>© 2026 ShopEase of Perfect Ten| All Rights Reserved</p>
+  <p>Home | Products | About Us | Contact</p>
+</footer>
 
-    <!-- Special Offer -->
-    <section class="offer">
-        <h2>Special Offer: Get Up to 50% Off!</h2>
-        <p>Shop your favourite products at amazing prices.</p>
-        <button id="offerButton">Shop Now</button>
-    </section>
-
-    <!-- Footer -->
-    <footer>
-        <h3>🛍️ ShopEase</h3>
-        <p>Your one-stop shop for the latest trends and best products.</p>
-        <p>© 2026 ShopEase | All Rights Reserved</p>
-    </footer>
-
-    <script src="javascript.js"></script>
 </body>
 </html>
