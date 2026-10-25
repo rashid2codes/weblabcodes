@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ShopEase - Home</title>
+  <link rel="stylesheet" href="shopstyle.css">
+  <script src="javascript.js" defer></script>
+</head>
+<body>
+
+<header>
+  <div class="logo">🛍 ShopEase of Perfect Ten</div>
+  <nav>
+    <a href="home.html">Home</a>
+    <a href="product.html">Products</a>
+    <a href="about.html">About Us</a>
+    <a href="contact.html">Contact</a>
+    
+  </nav>
+  <button onclick="toggleTheme()">🌙 Theme</button>
+</header>
+
+<main class="container">
+  <section class="hero">
+    <h1>Discover Trendy Products For a Better You</h1>
+    <p>Latest collections, best prices and amazing offers!</p>
+    <a class="btn" href="product.html">Shop Now</a>
+  </section>
+
+  <h2>Featured Products</h2>
+  <div class="products">
+
+    <div class="card">
+      <img src="D:\WEB LAB (YAWAR SIR)\sneekers.jpg" alt="Shoes">
+      <h3>Casual Sneakers</h3>
+      <p class="price">₹1,299</p>
+      <button onclick="addToCart('Casual Sneakers',1299)">Add to Cart</button>
+    </div>
+
+    <div class="card">
+      <img src="D:\WEB LAB (YAWAR SIR)\watch.jpg" alt="Watch">
+      <h3>Smart Watch</h3>
+      <p class="price">₹2,999</p>
+      <button onclick="addToCart('Smart Watch',2999)">Add to Cart</button>
+    </div>
+
+    <div class="card">
+      <img src="D:\WEB LAB (YAWAR SIR)\handbag.jpg" alt="Bag">
+      <h3>Stylish Handbag</h3>
+      <p class="price">₹1,899</p>
+      <button onclick="addToCart('Stylish Handbag',1899)">Add to Cart</button>
+    </div>
+
+    <div class="card">
+      <img src="D:\WEB LAB (YAWAR SIR)\headphone.jpg" alt="Headphones">
+      <h3>Wireless Headphones</h3>
+      <p class="price">₹2,499</p>
+      <button onclick="addToCart('Wireless Headphones',2499)">Add to Cart</button>
+    </div>
+
+  </div>
+
+  <h2>Shop by Category</h2>
+  <div class="products">
+    <div class="card"><h3>Electronics</h3><a class="btn" href="products.html">Explore</a></div>
+    <div class="card"><h3>Clothing</h3><a class="btn" href="products.html">Explore</a></div>
+    <div class="card"><h3>Accessories</h3><a class="btn" href="products.html">Explore</a></div>
+    <div class="card"><h3>Footwear</h3><a class="btn" href="products.html">Explore</a></div>
+  </div>
+</main>
+
+
+<footer>
+  <p>© 2026 ShopEase of Perfect Ten| All Rights Reserved</p>
+  <p>Home | Products | About Us | Contact</p>
+</footer>
+
+</body>
+</html>

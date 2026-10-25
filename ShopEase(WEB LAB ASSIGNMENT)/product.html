@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ShopEase - Products</title>
+  <link rel="stylesheet" href="shopstyle.css">
+  <script src="javascript.js" defer></script>
+</head>
+<body>
+
+<header>
+  <div class="logo">🛍 ShopEase of Perfect Ten</div>
+  <nav>
+    <a href="home.html">Home</a>
+    <a href="product.html">Products</a>
+    <a href="about.html">About Us</a>
+    <a href="contact.html">Contact</a>
+    
+  </nav>
+  <button onclick="toggleTheme()">🌙 Theme</button>
+</header>
+
+<main class="container">
+  <h1>Our Products</h1>
+
+  <input type="text" id="search" oninput="searchProducts()"
+         placeholder="Search products...">
+
+  <div>
+    <button onclick="filterProducts('All')">All</button>
+    <button onclick="filterProducts('Electronics')">Electronics</button>
+    <button onclick="filterProducts('Clothing')">Clothing</button>
+    <button onclick="filterProducts('Accessories')">Accessories</button>
+    <button onclick="filterProducts('Footwear')">Footwear</button>
+  </div>
+
+  <div class="products">
+
+    <div class="card" data-category="Footwear">
+      <img src="D:\WEB LAB (YAWAR SIR)\sneekers.jpg" alt="Sneakers">
+      <h3>Casual Sneakers</h3><p class="price">₹1299</p>
+      <button onclick="addToCart('Casual Sneakers',1299)">Add to Cart</button>
+      <button onclick="showDetails('Casual Sneakers',1299,'Comfortable everyday shoes.')">View Details</button>
+    </div>
+
+    <div class="card" data-category="Electronics">
+      <img src="D:\WEB LAB (YAWAR SIR)\watch.jpg" alt="Watch">
+      <h3>Smart Watch</h3><p class="price">₹2999</p>
+      <button onclick="addToCart('Smart Watch',2999)">Add to Cart</button>
+      <button onclick="showDetails('Smart Watch',2999,'A stylish watch for daily use.')">View Details</button>
+    </div>
+
+    <div class="card" data-category="Accessories">
+      <img src="D:\WEB LAB (YAWAR SIR)\handbag.jpg" alt="Handbag">
+      <h3>Stylish Handbag</h3><p class="price">₹1899</p>
+      <button onclick="addToCart('Stylish Handbag',1899)">Add to Cart</button>
+      <button onclick="showDetails('Stylish Handbag',1899,'A fashionable bag for everyday use.')">View Details</button>
+    </div>
+
+    <div class="card" data-category="Electronics">
+      <img src="D:\WEB LAB (YAWAR SIR)\headphone.jpg" alt="Headphones">
+      <h3>Wireless Headphones</h3><p class="price">₹2499</p>
+      <button onclick="addToCart('Wireless Headphones',2499)">Add to Cart</button>
+      <button onclick="showDetails('Wireless Headphones',2499,'Enjoy music without wires.')">View Details</button>
+    </div>
+
+    <div class="card" data-category="Accessories">
+      <img src="D:\WEB LAB (YAWAR SIR)\sunglasses.jpg" alt="Sunglasses">
+      <h3>Sunglasses</h3><p class="price">₹799</p>
+      <button onclick="addToCart('Sunglasses',799)">Add to Cart</button>
+      <button onclick="showDetails('Sunglasses',799,'Stylish sunglasses for sunny days.')">View Details</button>
+    </div>
+
+    <div class="card" data-category="Clothing">
+      <img src="D:\WEB LAB (YAWAR SIR)\Hoddie.jpg" alt="Hoodie">
+      <h3>Men's Hoodie</h3><p class="price">₹1499</p>
+      <button onclick="addToCart('Mens Hoodie',1499)">Add to Cart</button>
+      <button onclick="showDetails('Mens Hoodie',1499,'A comfortable casual hoodie.')">View Details</button>
+    </div>
+
+    <div class="card" data-category="Electronics">
+      <img src="D:\WEB LAB (YAWAR SIR)\camera.jpg" alt="Camera">
+      <h3>Digital Camera</h3><p class="price">₹4999</p>
+      <button onclick="addToCart('Digital Camera',4999)">Add to Cart</button>
+      <button onclick="showDetails('Digital Camera',4999,'Capture your special moments.')">View Details</button>
+    </div>
+
+    <div class="card" data-category="Accessories">
+      <img src="D:\WEB LAB (YAWAR SIR)\Perfume.jpg" alt="Perfume">
+      <h3>Perfume</h3><p class="price">₹1299</p>
+      <button onclick="addToCart('Perfume',1299)">Add to Cart</button>
+      <button onclick="showDetails('Perfume',1299,'A pleasant fragrance for daily use.')">View Details</button>
+    </div>
+
+  </div>
+</main>
+
+<div id="popup">
+  <div class="popup-box">
+    <button onclick="closePopup()" style="float:right">✖ Close</button>
+    <h2 id="detailName"></h2>
+    <h3 id="detailPrice"></h3>
+    <p id="detailDescription"></p>
+  </div>
+</div>
+
+<footer>© 2026 ShopEase | All Rights Reserved</footer>
+
+</body>
+</html>

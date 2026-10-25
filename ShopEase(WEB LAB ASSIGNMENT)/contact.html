@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact ShopEase</title>
+  <link rel="stylesheet" href="shopstyle.css">
+  <script src="javascript.js" defer></script>
+</head>
+<body>
+
+<header>
+  <div class="logo">🛍 ShopEase of Perfect Ten</div>
+  <nav>
+   <a href="home.html">Home</a>
+    <a href="product.html">Products</a>
+    <a href="about.html">About Us</a>
+    <a href="contact.html">Contact</a>
+    
+  <button onclick="toggleTheme()">🌙 Theme</button>
+</header>
+
+<main class="container">
+  <h1>Get in Touch</h1>
+  <p>Have a question? Send us a message.</p>
+
+  <form onsubmit="validateContact(event)">
+    <label for="name">Full Name</label>
+    <input id="name" type="text" placeholder="Enter your full name" required>
+
+    <label for="email">Email Address</label>
+    <input id="email" type="email" placeholder="Enter your email" required>
+
+    <label for="phone">Phone Number</label>
+    <input id="phone" type="tel" placeholder="Enter your phone number" required>
+
+    <label for="subject">Subject</label>
+    <input id="subject" type="text" placeholder="Enter subject" required>
+
+    <label for="message">Message</label>
+    <textarea id="message" rows="5" placeholder="Write your message" required></textarea>
+
+    <button type="submit">Submit</button>
+    <button type="reset">Reset</button>
+  </form>
+
+  <h2>Contact Information</h2>
+  <p>Address: Jammu, Jammu and Kashmir, India</p>
+  <p>Email: support@shopease.example</p>
+  <p>Phone: +91 6006986046</p>
+  <p><em>Sample contact details for this college project.</em></p>
+</main>
+
+<footer>© 2026 ShopEase | All Rights Reserved</footer>
+
+</body>
+</html>
