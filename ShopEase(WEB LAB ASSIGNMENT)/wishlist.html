@@ -1,0 +1,64 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>My Wishlist</title>
+  <link rel="stylesheet" href="shopstyle.css">
+  <script src="javascript.js" defer></script>
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar">
+
+        <h2>My Shop</h2>
+
+        <div class="nav-links">
+
+            <a href="home.html">Home</a>
+
+            <a href="cart.html">
+                🛒 Cart
+                <span id="cartCount">0</span>
+            </a>
+
+            <a href="wishlist.html" class="active">
+                ❤️ Wishlist
+                <span id="wishlistCount">0</span>
+            </a>
+
+        </div>
+
+    </nav>
+
+
+    <!-- Wishlist Section -->
+    <main>
+
+        <div class="wishlist-header">
+
+            <h1>My Wishlist ❤️</h1>
+
+            <button class="clear-btn" onclick="clearWishlist()">
+                Clear Wishlist
+            </button>
+
+        </div>
+
+
+        <!-- Products will appear here -->
+        <div id="wishlistItems" class="wishlist-container"></div>
+
+    </main>
+
+
+    <script src="wishlist.js"></script>
+
+</body>
+
+</html>

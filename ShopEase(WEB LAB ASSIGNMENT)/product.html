@@ -16,6 +16,9 @@
     <a href="product.html">Products</a>
     <a href="about.html">About Us</a>
     <a href="contact.html">Contact</a>
+    <a href="wishlist.html">Wishlist</a>
+     <a href="cart.html">Cart (<span id="cartCount">0</span>)</a>
+    
     
   </nav>
   <button onclick="toggleTheme()">🌙 Theme</button>
@@ -41,6 +44,9 @@
       <img src="D:\WEB LAB (YAWAR SIR)\sneekers.jpg" alt="Sneakers">
       <h3>Casual Sneakers</h3><p class="price">₹1299</p>
       <button onclick="addToCart('Casual Sneakers',1299)">Add to Cart</button>
+        <button onclick="addToWishlist('Stylish Sneakers',1299)">
+    ❤️ Wishlist
+  </button>
       <button onclick="showDetails('Casual Sneakers',1299,'Comfortable everyday shoes.')">View Details</button>
     </div>
 
@@ -48,6 +54,9 @@
       <img src="D:\WEB LAB (YAWAR SIR)\watch.jpg" alt="Watch">
       <h3>Smart Watch</h3><p class="price">₹2999</p>
       <button onclick="addToCart('Smart Watch',2999)">Add to Cart</button>
+       <button onclick="addToWishlist('Smart Watch',2999)">
+    ❤️ Wishlist
+  </button>
       <button onclick="showDetails('Smart Watch',2999,'A stylish watch for daily use.')">View Details</button>
     </div>
 
@@ -55,6 +64,9 @@
       <img src="D:\WEB LAB (YAWAR SIR)\handbag.jpg" alt="Handbag">
       <h3>Stylish Handbag</h3><p class="price">₹1899</p>
       <button onclick="addToCart('Stylish Handbag',1899)">Add to Cart</button>
+        <button onclick="addToWishlist('Stylish Handbag',1899)">
+    ❤️ Wishlist
+  </button>
       <button onclick="showDetails('Stylish Handbag',1899,'A fashionable bag for everyday use.')">View Details</button>
     </div>
 
@@ -62,6 +74,9 @@
       <img src="D:\WEB LAB (YAWAR SIR)\headphone.jpg" alt="Headphones">
       <h3>Wireless Headphones</h3><p class="price">₹2499</p>
       <button onclick="addToCart('Wireless Headphones',2499)">Add to Cart</button>
+        <button onclick="addToWishlist('Stylish Headphones',2499)">
+    ❤️ Wishlist
+  </button>
       <button onclick="showDetails('Wireless Headphones',2499,'Enjoy music without wires.')">View Details</button>
     </div>
 
@@ -92,6 +107,7 @@
       <button onclick="addToCart('Perfume',1299)">Add to Cart</button>
       <button onclick="showDetails('Perfume',1299,'A pleasant fragrance for daily use.')">View Details</button>
     </div>
+    
 
   </div>
 </main>

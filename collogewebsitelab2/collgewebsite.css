@@ -621,3 +621,18 @@ font-size: large;
     margin-left: auto;
     text-align: end;
 }
+#theme-toggle {
+  display: block;
+  margin: 10px 0 10px 8px;
+  padding: 14px 28px;
+  border: none;
+  border-radius: 6px;
+  background: #ed0b85;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+#theme-toggle:hover {
+  background: #c90870;
+}

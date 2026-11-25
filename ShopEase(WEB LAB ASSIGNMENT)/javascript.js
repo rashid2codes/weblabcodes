@@ -78,7 +78,7 @@ document.addEventListener("DOMContentLoaded", () => {
   }
 
   updateCart();
-});
+})
 function showCart() {
   let list = document.getElementById("cartItems");
   if (!list) return;
@@ -104,4 +104,4 @@ function removeItem(index) {
   cart.splice(index, 1);
   updateCart();
   showCart();
-}
+};
