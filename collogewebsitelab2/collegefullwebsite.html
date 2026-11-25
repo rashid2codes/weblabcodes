@@ -24,21 +24,27 @@
             </div>
         </div>
     </header>
+    
     <div class="login-box">
     <form action="D:\WEB LAB (YAWAR SIR)\collogewebsitelab2\student-login.html">
-    <button class="student-login">👤Student-Login</button>
+    <button class="student-login" onclick="studentLogin()">
+    👤 Student Login
+</button>
     </form>
     </div>
+    <button id="theme-toggle" class="student-login" type="button">
+  🌙 Dark theme
+</button>
 
 
     <!-- Navigation Bar -->
     <nav>
-        <a href="D:\WEB LAB (YAWAR SIR)\collogewebsitelab2\collegefullwebsite.html">Home</a>
-        <a href="D:\WEB LAB (YAWAR SIR)\collogewebsitelab2\about.html">About</a>
-        <a href="faculty.html">Faculty</a>
-        <a href="students.html">Students</a>
-        <a href="gallery.html">Photo Gallery</a>
-        <a href="D:\WEB LAB (YAWAR SIR)\collogewebsitelab2\admissionform.html">Student Admission Form</a>
+        <a href="D:\WEB LAB (YAWAR SIR)\collogewebsitelab2\collegefullwebsite.html" onclick="showMessage('Home')">Home</a>
+        <a href="D:\WEB LAB (YAWAR SIR)\collogewebsitelab2\about.html" onclick="showMessage('About')">About</a>
+        <a href="faculty.html" onclick="showMessage('Faculty')">Faculty</a>
+        <a href="students.html" onclick="showMessage('Students')">Students</a>
+        <a href="gallery.html" onclick="showMessage('Photo Gallery')">Photo Gallery</a>
+        <a href="D:\WEB LAB (YAWAR SIR)\collogewebsitelab2\admissionform.html" onclick="showMessage('Student Admission Form')">Student Admission Form</a>
        
     </nav>
     
@@ -64,11 +70,13 @@
 
 
     <!-- Footer -->
-    <footer>
-        <p>
-            &copy; 2026 GCET Jammu. All Rights Reserved.
-        </p>
-    </footer>
+    
+<footer>
+    <p>
+        &copy; <span id="year"></span> GCET Jammu. All Rights Reserved.
+    </p>
+</footer>
+    <script src="jsofcollege.js"></script>
 
 </body>
 </html>

@@ -203,3 +203,25 @@ footer {
     gap: 12px;
   }
 }
+    /* Wishlist */
+#wishlistItems {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+#wishlistItems .card {
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  background: white;
+}
+
+#wishlistItems button {
+  padding: 8px 12px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  background: #ff4d6d;
+  color: white;
+}
